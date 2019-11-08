@@ -1,18 +1,30 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <style>
+        #maintitle {
+          text-align: center;
+          font-size: 30px;
+        }
+      </style>
       <title>Login Page</title>
     </head>
     <body>
+      <center>
       <form name="Login" method="post">
       <!--Should add a action to the form above.-->
-      <b><p>Login Page</p></b>
+      <b><p id="maintitle">Login Page</p></b>
       <p>Username:<p>
       <input type="text" size="25" name="username">
       <p>Password:</p>
       <input type="Password" size=25 name="password">
+      <br>
+      <br>      
       <input type="Reset" value="Clear">
+      <br>
+      <br>
       <input type="submit" onclick="return check(this.form)" value="Login">
+      </center>
       <script>
         function check(form) {
         if(form.username.value == "Username" && form.password.value == "Password") {
